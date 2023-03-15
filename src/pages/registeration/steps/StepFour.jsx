@@ -13,8 +13,12 @@ const StepFour = ({ currentStep, setCurrentStep }) => {
       </div>
       <form>
         <div className="step--form">
-          <TextInput type="email" placeholder="example@gmail.com" />
-          <TextInput type="password" placeholder="******" />
+          <TextInput
+            type="email"
+            placeholder="example@gmail.com"
+            label="Email Address"
+          />
+          <TextInput type="password" placeholder="******" label="password" />
         </div>
         <div className="step--action">
           <Button onClick={handleNextStep} />
