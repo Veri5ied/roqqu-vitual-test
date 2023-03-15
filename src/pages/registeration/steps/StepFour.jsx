@@ -9,11 +9,12 @@ const StepFour = ({ currentStep, setCurrentStep }) => {
     <div className="steps-container">
       <div className="step--title">
         <p>Thank you Alvin👋🏽</p>
-        <p>Let's Have your Phone Number</p>
+        <p>Enter your email and create a password</p>
       </div>
       <form>
         <div className="step--form">
-          <TextInput type="tels" placeholder="+234" />
+          <TextInput type="email" placeholder="example@gmail.com" />
+          <TextInput type="password" placeholder="******" />
         </div>
         <div className="step--action">
           <Button onClick={handleNextStep} />

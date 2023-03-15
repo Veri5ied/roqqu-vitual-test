@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { RoqquLogo } from "../../assets";
-import { StepOneForm, StepTwoForm, StepThreeForm } from "./steps";
+import {
+  StepOneForm,
+  StepTwoForm,
+  StepThreeForm,
+  StepFourForm,
+  StepFiveForm,
+} from "./steps";
 
 const Register = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -56,6 +62,20 @@ const Register = () => {
           )}
           {currentStep === 3 && (
             <StepThreeForm
+              formData={formData}
+              setCurrentStep={setCurrentStep}
+              currentStep={currentStep}
+            />
+          )}
+          {currentStep === 4 && (
+            <StepFourForm
+              formData={formData}
+              setCurrentStep={setCurrentStep}
+              currentStep={currentStep}
+            />
+          )}
+          {currentStep === 5 && (
+            <StepFiveForm
               formData={formData}
               setCurrentStep={setCurrentStep}
               currentStep={currentStep}
