@@ -1,0 +1,29 @@
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.68rem;
+  color: #fff;
+}
+
+.input-layout {
+  input {
+    align-items: center;
+    background-color: inherit;
+    border: 0.1rem solid hsla(0, 0%, 57%, 0.2);
+    border-radius: 0.8rem;
+    display: flex;
+    padding: 0 1.6rem;
+    position: relative;
+    width: 100%;
+    height: 52px;
+    margin-top: 0.3em;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.68rem;
+
+    &::placeholder {
+      color: rgb(167, 177, 188);
+    }
+  }
+}

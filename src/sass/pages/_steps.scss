@@ -1,0 +1,28 @@
+.step--title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.step--description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(167, 177, 188);
+}
+
+.step--form {
+  display: grid;
+  gap: 1em;
+  margin-top: 2em;
+
+  span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(167, 177, 188);
+  }
+}
+
+.step--action {
+  margin-top: 1em;
+}
